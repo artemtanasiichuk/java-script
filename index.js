@@ -1,57 +1,51 @@
-
-let age = 15;
-console.log("Ваш вік:", age);
-
-
-let name = "artem";
-const artem= "artem"
+const celsius = 19; 
+const fahrenheit = (celsius * 9/5) + 32;
+console.log(fahrenheit)
 
 
-console.log("Ваше ім'я:", name);
+let daysInMonth = 30; 
+let hoursInMonth = daysInMonth * 24;
+let minutesInMonth = hoursInMonth * 60;
+console.log("chasov v chasy", hoursInMonth);
+console.log("minyt v mesace:", minutesInMonth);
 
 
-let isStudent = true;
+let health = 100;
+let energy = 80;
+health -= 20; 
+energy -= 15; 
+console.log("уroven zcorovya:", health);
+console.log("уroven energii:", energy);
+
+let totalPrice = 500; 
+let discount = 0.1; 
+let discountedPrice = totalPrice * (1 - discount);
+console.log("cena so skydkoy:", discountedPrice);
 
 
-console.log("Чи ви студент:", isStudent);
+const floatNumber = 12.78;
+let roundedDown = Math.floor(floatNumber);
+console.log( roundedDown);
 
 
-let myString = "Не помиляється той, хто нічого не робить.";
-console.log("Цитата:", myString);
-
-let myNumber = 4;
-myNumber += 10;
+const floatString = "45.67" 
+let parsedFloat = parseFloat(floatString);
+console.log(parsedFloat);
 
 
-console.log("myNumber після додавання 10:", myNumber);
+const intString = "123"; 
+let parsedInt = parseInt(intString);
+console.log(parsedInt);
 
 
-let myNull = null;
+let number = 81;
+let sqrtNumber = Math.sqrt(number);  
+console.log(sqrtNumber);
 
 
-console.log("Значення myNull:", myNull);
-
-
-let userName = prompt("Введіть своє ім’я:");
-alert("Ваше ім’я: " + userName);
-console.log("Тип змінної userName:", typeof userName);
-
-
-let userAnswer = confirm("Ви дійсно хочете покинути сторінку?");
-
-
-console.log("Результат підтвердження:", userAnswer);
-if (userAnswer) {
-    console.log("Користувач погодився покинути сторінку.");
-} else {
-    console.log("Користувач відмінив дію.");
-}
-
-
-alert("Увага! Дія може бути небезпечною!");
-let continueAction = confirm("Ви впевнені, що хочете продовжити?");
-if (continueAction) {
-    console.log("Користувач підтвердив дію.");
-} else {
-    console.log("Користувач скасував дію.");
-}
+const integer = 42;
+const stringNumber = "256"; 
+let convertedInt = parseInt(stringNumber);
+console.log(convertedInt);
+let convertedString = integer.toString();
+console.log(convertedString);
